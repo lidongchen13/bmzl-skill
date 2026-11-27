@@ -96,4 +96,6 @@ poppler 通常随 TeXLive 一起提供；Windows 上把 `C:\texlive\<year>\bin\w
 
 ## License
 
-未指定；如需开源协议请自行补充。
+[MIT](LICENSE) © 2026 lidongchen13
+
+代码与文档均可自由使用、修改与再分发，保留版权声明即可。
