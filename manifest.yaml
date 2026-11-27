@@ -1,0 +1,17 @@
+name: bmzl
+version: 1.0.0
+description: >
+  笔墨之林推文写作工作流。SKILL.md 只保留流程与硬性规范，分节句式骨架在写作时始终加载，
+  完整条款与交付自检按需加载，避免一开始就灌入整本写作规范。
+
+always_load:
+  - references/blueprint.md
+
+references:
+  on_demand:
+    - condition: 需要核对原始条款原文（字数上限、括号与空格规则、图表与公式要求、常见表达问题、主编审查口径），或用户质疑某条格式
+      path: references/spec.md
+    - condition: 稿件接近完成、准备交付，或用户要求返修后复核
+      path: references/checklist.md
+    - condition: 首次上手、需要参照已采纳稿的文风与篇幅分配，或不确定某处该写多少字
+      path: references/example.md
